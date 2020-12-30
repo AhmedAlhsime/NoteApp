@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="my_note">My Note</string>
+    <string name="search_note">Search notes</string>
+    <string name="note_title">Note Title</string>
+    <string name="note_subtitle">Note Subtitle</string>
+    <string name="type_note_here">Type Note Here...</string>
+    <string name="add_miscellaneous">Add Miscellaneous</string>
+    <string name="pick_color"><u>Pick Color</u></string>
+    <string name="add_image_bottom_sheet">Add Image</string>
+    <string name="add_url_bottom_sheet">Add URL</string>
+    <string name="copy_text_bottom_sheet">Copy</string>
+    <string name="delete_note_bottom_sheet">Delete Note</string>
+    <string name="add_url_dialog">Add Url</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="delete_url">Delete Url</string>
+    <string name="delete_image">Delete Image</string>
+    <string name="description_delete_note">Are you sure you want to delete this note?</string>
+    <string name="description_delete_url">Are you sure you want to delete this url?</string>
+    <string name="description_delete_image">Are you sure you want to delete this image?</string>
+    <string name="url">url...</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="confirm">Confirm</string>
+</resources>

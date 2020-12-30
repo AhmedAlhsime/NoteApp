@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_peekHeight="@dimen/_35sdp"
+    app:elevation="@dimen/_5sdp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_bottom_sheet">
+
+        <TextView
+            android:id="@+id/Miscellaneous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:includeFontPadding="false"
+            android:text="@string/add_miscellaneous"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <LinearLayout
+            android:id="@+id/colorNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Miscellaneous">
+
+            <FrameLayout
+                android:id="@+id/noteDefault1"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/background_default_note"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/ic_done_note1"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone"
+                    app:tint="@color/colorWhite" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/note2"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/background_note2"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/ic_done_note2"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone"
+                    app:tint="@color/colorWhite" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/note3"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/background_note3"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/ic_done_note3"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone"
+                    app:tint="@color/colorWhite" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/note4"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/background_note4"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/ic_done_note4"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone"
+                    app:tint="@color/colorWhite" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/note5"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/background_note5"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/ic_done_note5"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone"
+                    app:tint="@color/colorNote5" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ubuntu_bold"
+                android:includeFontPadding="false"
+                android:text="@string/pick_color"
+                android:textColor="@color/colorTextSubtitle"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/colorNote"
+            app:layout_constraintTop_toBottomOf="@id/colorNote">
+
+            <TextView
+                android:id="@+id/ic_add_image_bottom_sheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/add_image_bottom_sheet"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextSubtitle"
+                android:textSize="@dimen/_12ssp"
+                app:drawableStartCompat="@drawable/ic_add_image" />
+
+            <TextView
+                android:id="@+id/ic_add_url_bottom_sheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/add_url_bottom_sheet"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextSubtitle"
+                android:textSize="@dimen/_12ssp"
+                app:drawableStartCompat="@drawable/ic_web" />
+
+            <TextView
+                android:id="@+id/ic_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/copy_text_bottom_sheet"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextSubtitle"
+                android:textSize="@dimen/_12ssp"
+                app:drawableStartCompat="@drawable/ic_copy" />
+
+            <TextView
+                android:id="@+id/delete_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/delete_note_bottom_sheet"
+                android:textAlignment="center"
+                android:textColor="@color/colorDelete"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_baseline_delete_forever_24" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
